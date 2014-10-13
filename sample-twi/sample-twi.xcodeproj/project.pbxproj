@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1AAF3B2319EBC2740087D2C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF3B2219EBC2740087D2C3 /* AppDelegate.swift */; };
+		1AAF3B2619EBC2740087D2C3 /* sample_twi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF3B2419EBC2740087D2C3 /* sample_twi.xcdatamodeld */; };
+		1AAF3B2819EBC2740087D2C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF3B2719EBC2740087D2C3 /* ViewController.swift */; };
+		1AAF3B2B19EBC2740087D2C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AAF3B2919EBC2740087D2C3 /* Main.storyboard */; };
+		1AAF3B2D19EBC2740087D2C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AAF3B2C19EBC2740087D2C3 /* Images.xcassets */; };
+		1AAF3B3019EBC2740087D2C3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AAF3B2E19EBC2740087D2C3 /* LaunchScreen.xib */; };
+		1AAF3B3C19EBC2740087D2C3 /* sample_twiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF3B3B19EBC2740087D2C3 /* sample_twiTests.swift */; };
+		1AAF3B4619EBC3320087D2C3 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AAF3B4519EBC3320087D2C3 /* CoreBluetooth.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AAF3B3619EBC2740087D2C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1AAF3B1519EBC2740087D2C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1AAF3B1C19EBC2740087D2C3;
+			remoteInfo = "sample-twi";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1AAF3B1D19EBC2740087D2C3 /* sample-twi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sample-twi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AAF3B2119EBC2740087D2C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AAF3B2219EBC2740087D2C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1AAF3B2519EBC2740087D2C3 /* sample_twi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = sample_twi.xcdatamodel; sourceTree = "<group>"; };
+		1AAF3B2719EBC2740087D2C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1AAF3B2A19EBC2740087D2C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1AAF3B2C19EBC2740087D2C3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1AAF3B2F19EBC2740087D2C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		1AAF3B3519EBC2740087D2C3 /* sample-twiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sample-twiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AAF3B3A19EBC2740087D2C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AAF3B3B19EBC2740087D2C3 /* sample_twiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sample_twiTests.swift; sourceTree = "<group>"; };
+		1AAF3B4519EBC3320087D2C3 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AAF3B1A19EBC2740087D2C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAF3B4619EBC3320087D2C3 /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AAF3B3219EBC2740087D2C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1AAF3B1419EBC2740087D2C3 = {
+			isa = PBXGroup;
+			children = (
+				1AAF3B4519EBC3320087D2C3 /* CoreBluetooth.framework */,
+				1AAF3B1F19EBC2740087D2C3 /* sample-twi */,
+				1AAF3B3819EBC2740087D2C3 /* sample-twiTests */,
+				1AAF3B1E19EBC2740087D2C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1AAF3B1E19EBC2740087D2C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1AAF3B1D19EBC2740087D2C3 /* sample-twi.app */,
+				1AAF3B3519EBC2740087D2C3 /* sample-twiTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1AAF3B1F19EBC2740087D2C3 /* sample-twi */ = {
+			isa = PBXGroup;
+			children = (
+				1AAF3B2219EBC2740087D2C3 /* AppDelegate.swift */,
+				1AAF3B2719EBC2740087D2C3 /* ViewController.swift */,
+				1AAF3B2919EBC2740087D2C3 /* Main.storyboard */,
+				1AAF3B2C19EBC2740087D2C3 /* Images.xcassets */,
+				1AAF3B2E19EBC2740087D2C3 /* LaunchScreen.xib */,
+				1AAF3B2419EBC2740087D2C3 /* sample_twi.xcdatamodeld */,
+				1AAF3B2019EBC2740087D2C3 /* Supporting Files */,
+			);
+			path = "sample-twi";
+			sourceTree = "<group>";
+		};
+		1AAF3B2019EBC2740087D2C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AAF3B2119EBC2740087D2C3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1AAF3B3819EBC2740087D2C3 /* sample-twiTests */ = {
+			isa = PBXGroup;
+			children = (
+				1AAF3B3B19EBC2740087D2C3 /* sample_twiTests.swift */,
+				1AAF3B3919EBC2740087D2C3 /* Supporting Files */,
+			);
+			path = "sample-twiTests";
+			sourceTree = "<group>";
+		};
+		1AAF3B3919EBC2740087D2C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AAF3B3A19EBC2740087D2C3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1AAF3B1C19EBC2740087D2C3 /* sample-twi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AAF3B3F19EBC2740087D2C3 /* Build configuration list for PBXNativeTarget "sample-twi" */;
+			buildPhases = (
+				1AAF3B1919EBC2740087D2C3 /* Sources */,
+				1AAF3B1A19EBC2740087D2C3 /* Frameworks */,
+				1AAF3B1B19EBC2740087D2C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "sample-twi";
+			productName = "sample-twi";
+			productReference = 1AAF3B1D19EBC2740087D2C3 /* sample-twi.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1AAF3B3419EBC2740087D2C3 /* sample-twiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1AAF3B4219EBC2740087D2C3 /* Build configuration list for PBXNativeTarget "sample-twiTests" */;
+			buildPhases = (
+				1AAF3B3119EBC2740087D2C3 /* Sources */,
+				1AAF3B3219EBC2740087D2C3 /* Frameworks */,
+				1AAF3B3319EBC2740087D2C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1AAF3B3719EBC2740087D2C3 /* PBXTargetDependency */,
+			);
+			name = "sample-twiTests";
+			productName = "sample-twiTests";
+			productReference = 1AAF3B3519EBC2740087D2C3 /* sample-twiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1AAF3B1519EBC2740087D2C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Gymglish;
+				TargetAttributes = {
+					1AAF3B1C19EBC2740087D2C3 = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 729HB584N8;
+					};
+					1AAF3B3419EBC2740087D2C3 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = 1AAF3B1C19EBC2740087D2C3;
+					};
+				};
+			};
+			buildConfigurationList = 1AAF3B1819EBC2740087D2C3 /* Build configuration list for PBXProject "sample-twi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1AAF3B1419EBC2740087D2C3;
+			productRefGroup = 1AAF3B1E19EBC2740087D2C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1AAF3B1C19EBC2740087D2C3 /* sample-twi */,
+				1AAF3B3419EBC2740087D2C3 /* sample-twiTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1AAF3B1B19EBC2740087D2C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAF3B2B19EBC2740087D2C3 /* Main.storyboard in Resources */,
+				1AAF3B3019EBC2740087D2C3 /* LaunchScreen.xib in Resources */,
+				1AAF3B2D19EBC2740087D2C3 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AAF3B3319EBC2740087D2C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1AAF3B1919EBC2740087D2C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAF3B2819EBC2740087D2C3 /* ViewController.swift in Sources */,
+				1AAF3B2619EBC2740087D2C3 /* sample_twi.xcdatamodeld in Sources */,
+				1AAF3B2319EBC2740087D2C3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AAF3B3119EBC2740087D2C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1AAF3B3C19EBC2740087D2C3 /* sample_twiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1AAF3B3719EBC2740087D2C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1AAF3B1C19EBC2740087D2C3 /* sample-twi */;
+			targetProxy = 1AAF3B3619EBC2740087D2C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1AAF3B2919EBC2740087D2C3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AAF3B2A19EBC2740087D2C3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1AAF3B2E19EBC2740087D2C3 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1AAF3B2F19EBC2740087D2C3 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1AAF3B3D19EBC2740087D2C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1AAF3B3E19EBC2740087D2C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1AAF3B4019EBC2740087D2C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "sample-twi/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		1AAF3B4119EBC2740087D2C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "sample-twi/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		1AAF3B4319EBC2740087D2C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "sample-twiTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sample-twi.app/sample-twi";
+			};
+			name = Debug;
+		};
+		1AAF3B4419EBC2740087D2C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "sample-twiTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sample-twi.app/sample-twi";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1AAF3B1819EBC2740087D2C3 /* Build configuration list for PBXProject "sample-twi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AAF3B3D19EBC2740087D2C3 /* Debug */,
+				1AAF3B3E19EBC2740087D2C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1AAF3B3F19EBC2740087D2C3 /* Build configuration list for PBXNativeTarget "sample-twi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AAF3B4019EBC2740087D2C3 /* Debug */,
+				1AAF3B4119EBC2740087D2C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1AAF3B4219EBC2740087D2C3 /* Build configuration list for PBXNativeTarget "sample-twiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AAF3B4319EBC2740087D2C3 /* Debug */,
+				1AAF3B4419EBC2740087D2C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1AAF3B2419EBC2740087D2C3 /* sample_twi.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1AAF3B2519EBC2740087D2C3 /* sample_twi.xcdatamodel */,
+			);
+			currentVersion = 1AAF3B2519EBC2740087D2C3 /* sample_twi.xcdatamodel */;
+			path = sample_twi.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1AAF3B1519EBC2740087D2C3 /* Project object */;
+}
