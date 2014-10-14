@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AA54BBA19ED4FDC003B83D1 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA54BB919ED4FDC003B83D1 /* SceneKit.framework */; };
 		1AAF3B2319EBC2740087D2C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF3B2219EBC2740087D2C3 /* AppDelegate.swift */; };
 		1AAF3B2619EBC2740087D2C3 /* sample_twi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF3B2419EBC2740087D2C3 /* sample_twi.xcdatamodeld */; };
 		1AAF3B2819EBC2740087D2C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF3B2719EBC2740087D2C3 /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AA54BB919ED4FDC003B83D1 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
 		1AAF3B1D19EBC2740087D2C3 /* sample-twi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sample-twi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AAF3B2119EBC2740087D2C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1AAF3B2219EBC2740087D2C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AA54BBA19ED4FDC003B83D1 /* SceneKit.framework in Frameworks */,
 				1AAF3B4619EBC3320087D2C3 /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,6 +67,7 @@
 		1AAF3B1419EBC2740087D2C3 = {
 			isa = PBXGroup;
 			children = (
+				1AA54BB919ED4FDC003B83D1 /* SceneKit.framework */,
 				1AAF3B4519EBC3320087D2C3 /* CoreBluetooth.framework */,
 				1AAF3B1F19EBC2740087D2C3 /* sample-twi */,
 				1AAF3B3819EBC2740087D2C3 /* sample-twiTests */,
@@ -422,6 +426,7 @@
 				1AAF3B4119EBC2740087D2C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1AAF3B4219EBC2740087D2C3 /* Build configuration list for PBXNativeTarget "sample-twiTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +435,7 @@
 				1AAF3B4419EBC2740087D2C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
