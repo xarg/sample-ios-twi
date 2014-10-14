@@ -7,12 +7,13 @@ class ViewController: UIViewController, CBCentralManagerDelegate {
     
     var centralManager:CBCentralManager!
     var blueToothReady = false
+    var scene:SCNScene!
     
     override func viewDidLoad() {
         super.viewDidLoad()
        
         // create a new scene
-        let scene = SCNScene() //(named: "art.scnassets/ship.dae")
+        scene = SCNScene() //(named: "art.scnassets/ship.dae")
         
         // create and add a camera to the scene
         let cameraNode = SCNNode()
@@ -53,18 +54,24 @@ class ViewController: UIViewController, CBCentralManagerDelegate {
         
         
         let box = SCNBox(width: 3, height: 3, length: 3, chamferRadius: 0.1)
+        //TODO(alex): adding a material doesn't seem to work
         let boxMaterial = SCNMaterial()
-        boxMaterial.reflective.contents = UIImage(named: "sphere.png")
+        boxMaterial.reflective.contents = UIImage(named: "checker.png")
         box.materials?.append(boxMaterial)
         
         let boxNode = SCNNode(geometry: box)
+        boxNode.name = "box"
+        
+        let keyframeAnimation = CAKeyframeAnimation(keyPath: "rotation")
+        keyframeAnimation.timingFunction = CAMediaTimingFunction()
+        
         
         // Add animation
         let spin = CABasicAnimation(keyPath: "rotation")
         spin.toValue = NSValue(SCNVector4: SCNVector4(x: 1, y: 1.0, z: 0.0, w: Float(2.0*M_PI)))
         spin.duration = 3
         spin.repeatCount = HUGE // for infinity
-        boxNode.addAnimation(spin, forKey: "spin around")
+        boxNode.addAnimation(spin, forKey: "spin")
         
         scene.rootNode.addChildNode(boxNode)
         
@@ -79,11 +86,12 @@ class ViewController: UIViewController, CBCentralManagerDelegate {
         scnView.allowsCameraControl = true
         
         // show statistics such as fps and timing information
-        // scnView.showsStatistics = true
+        scnView.showsStatistics = true
         
         // configure the view
         scnView.backgroundColor = UIColor.blackColor()
         
+        // Start bluetooth and get data from Twi devices
         startUpCentralManager()
     }
     
@@ -113,7 +121,34 @@ class ViewController: UIViewController, CBCentralManagerDelegate {
         if peripheral.name == "Twi" { // only track Twi devices
             for (key, value)  in advertisementData {
                 if key == "kCBAdvDataManufacturerData" {
-                    println("Position: \(value)")
+                    if let raw = value as? NSData {
+                        let desc = raw.description
+                        
+                        //Example: <59002c01 fcfa703e 0000ffff fcff>
+                        let bytes = desc.componentsSeparatedByString(" ")
+                        // ignore <5900 and take 4 - ask this guy: https://github.com/honnet (Cédric Honnet)
+                        let ax = (bytes[0] as NSString).substringFromIndex(5) //2c01
+                        let ay = (bytes[1] as NSString).substringToIndex(4) //fcfa
+                        let az = (bytes[1] as NSString).substringFromIndex(5) //703e
+                        let yaw = (bytes[2] as NSString).substringToIndex(4) //0000
+                        let pitch = (bytes[2] as NSString).substringFromIndex(4) //ffff
+                        let roll = (bytes[3] as NSString).substringToIndex(4) //fcff
+                        
+                        //let axFloat *Float = 1
+                        //let scanner = NSScanner(string:ax)
+                        //scanner.scanHexFloat(result:axFloat)
+                        
+                        println("Bytes: \(desc)")
+                        println("ax: \(ax) | ay: \(ay) | az: \(ax)") // calibrated in  +/-2g, bounds: (-2**12 , 2**12 - 1)
+                        println("yaw: \(yaw) | pitch: \(pitch) | roll: \(roll)") // signed degrees: (-180, 180)
+                    }
+                    
+                    for node in scene.rootNode.childNodes {
+                        let n = node as? SCNNode
+                        if n?.name == "box" {
+                            let animation = n?.animationForKey("spin") as CABasicAnimation
+                        }
+                    }
                 }
             }
         }

@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A546FF519ED803A006189E7 /* checker.png in Resources */ = {isa = PBXBuildFile; fileRef = 1A546FF419ED803A006189E7 /* checker.png */; };
 		1AA54BBA19ED4FDC003B83D1 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA54BB919ED4FDC003B83D1 /* SceneKit.framework */; };
 		1AAF3B2319EBC2740087D2C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF3B2219EBC2740087D2C3 /* AppDelegate.swift */; };
 		1AAF3B2619EBC2740087D2C3 /* sample_twi.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF3B2419EBC2740087D2C3 /* sample_twi.xcdatamodeld */; };
 		1AAF3B2819EBC2740087D2C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF3B2719EBC2740087D2C3 /* ViewController.swift */; };
 		1AAF3B2B19EBC2740087D2C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1AAF3B2919EBC2740087D2C3 /* Main.storyboard */; };
-		1AAF3B2D19EBC2740087D2C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1AAF3B2C19EBC2740087D2C3 /* Images.xcassets */; };
 		1AAF3B3019EBC2740087D2C3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AAF3B2E19EBC2740087D2C3 /* LaunchScreen.xib */; };
 		1AAF3B3C19EBC2740087D2C3 /* sample_twiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAF3B3B19EBC2740087D2C3 /* sample_twiTests.swift */; };
 		1AAF3B4619EBC3320087D2C3 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AAF3B4519EBC3320087D2C3 /* CoreBluetooth.framework */; };
@@ -29,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A546FF419ED803A006189E7 /* checker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checker.png; sourceTree = "<group>"; };
 		1AA54BB919ED4FDC003B83D1 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
 		1AAF3B1D19EBC2740087D2C3 /* sample-twi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sample-twi.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AAF3B2119EBC2740087D2C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,7 +37,6 @@
 		1AAF3B2519EBC2740087D2C3 /* sample_twi.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = sample_twi.xcdatamodel; sourceTree = "<group>"; };
 		1AAF3B2719EBC2740087D2C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1AAF3B2A19EBC2740087D2C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1AAF3B2C19EBC2740087D2C3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1AAF3B2F19EBC2740087D2C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		1AAF3B3519EBC2740087D2C3 /* sample-twiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sample-twiTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1AAF3B3A19EBC2740087D2C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -90,9 +90,9 @@
 				1AAF3B2219EBC2740087D2C3 /* AppDelegate.swift */,
 				1AAF3B2719EBC2740087D2C3 /* ViewController.swift */,
 				1AAF3B2919EBC2740087D2C3 /* Main.storyboard */,
-				1AAF3B2C19EBC2740087D2C3 /* Images.xcassets */,
 				1AAF3B2E19EBC2740087D2C3 /* LaunchScreen.xib */,
 				1AAF3B2419EBC2740087D2C3 /* sample_twi.xcdatamodeld */,
+				1A546FF419ED803A006189E7 /* checker.png */,
 				1AAF3B2019EBC2740087D2C3 /* Supporting Files */,
 			);
 			path = "sample-twi";
@@ -204,9 +204,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A546FF519ED803A006189E7 /* checker.png in Resources */,
 				1AAF3B2B19EBC2740087D2C3 /* Main.storyboard in Resources */,
 				1AAF3B3019EBC2740087D2C3 /* LaunchScreen.xib in Resources */,
-				1AAF3B2D19EBC2740087D2C3 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
